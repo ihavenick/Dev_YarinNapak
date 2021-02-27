@@ -1,0 +1,162 @@
+﻿@model Dev_YarinNeYapak.Controllers.SiteYVM
+
+    @{
+        Layout = null;
+    }
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <!--Stylesheet ler-->
+        <meta charset="utf-8" />
+        <link href="https://xn--ataetin-wxa.xyz/Assets/Content/animsition.min.css" rel="stylesheet" />
+        <link href="https://xn--ataetin-wxa.xyz/Assets/Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/font-awesome.css" rel="stylesheet" />
+        <link href="/fullcalendar-3.4.0/fullcalendar.min.css" rel="stylesheet" />
+        <link href="/fullcalendar-3.4.0/fullcalendar.print.min.css" rel="stylesheet" />
+        <style>
+            html {
+                position: relative;
+                min-height: 150%;
+            }
+
+            body {
+                margin-bottom: 60px;
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                z-index: -1;
+                background-color: #f5f5f5;
+            }
+
+            .container {
+                width: auto;
+                max-width: 680px;
+                padding: 0 15px;
+            }
+
+                .container .text-muted {
+                    margin: 20px 0;
+                }
+        </style>
+        <!--Scriptler-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="https://xn--ataetin-wxa.xyz/Assets/scripts/bootstrap.min.js"></script>
+
+        <script src="https://xn--ataetin-wxa.xyz/Assets/scripts/animsition.min.js"></script>
+        
+        <title>Yalcinlar Emlak</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+    <span class="sr-only">Menuyu Ac</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand">Yalcinlar Emlak</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+    <ul class="nav navbar-nav">
+    <li><a href="http://mekaapp.com/yalcinlaremlak" class="animsition-link"><i class="fa-add"></i>Anasayfa</a></li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+
+    <content>
+        <div class="modal fade" id="eklemodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id="partialViewContainer">
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+    <div class="animsition">
+    @*<div id='calendar'></div>*@
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center"><h3>Kiralik evler</h3></div>
+                <div class="panel-body">
+                    <div class="col-md-12" style="margin-bottom:5px">
+                        <div class="text-center">
+                            <button class="btn btn-success btnekle" data-toggle="modal" data-target="#eklemodal"><i class="fa fa-plus">Yeni Ekle</i></button>
+                            <div class="form-group">
+                                <p>Goruntulemek istediginiz evi seciniz :</p>
+                                <div class="col-md-12">
+                                    @using (Html.BeginForm())
+                                    {
+                                        <div class="col-md-12">
+                                            @Html.DropDownListFor(x => x.SecilenApartman, ViewBag.ApartmanListesi as List<SelectListItem>, "Kiralik Seciniz", new { id = "kiralikListesi", @class = "form-control" })
+                                        </div>
+                                        <div class="col-md-12 modal-footer">
+                                            <button type="submit" class="btn btn-success">Tamam</button>
+                                        </div>
+                                        @*<div class="col-md-12">
+                                            <button type="submit" class="btn btn-success pull-right">Goruntule</button>
+                                        </div>*@
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </content>
+    <footer class="footer">
+    <div class="container">
+    <p class="text-muted">Hami bizi Diskoya Gotur</p>
+    </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+        $('.btnekle').on('click', function (e) {
+            e.preventDefault();
+            $.get('@Url.Action("EvEkle","YalcinlarEmlak")', function (result) {
+                $('#partialViewContainer').html(result);
+            });
+        });
+    });
+
+
+    $(document).ready(function () {
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: true,
+            timeoutCountdown: 3000,
+            onLoadEvent: true,
+            browser: ['animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay: false,
+            overlayClass: 'animsition-overlay-slide',
+            overlayParentElement: 'body',
+            transition: function (url) { window.location.href = url; }
+        });
+    });
+    </script>
+    </body>
+</html>

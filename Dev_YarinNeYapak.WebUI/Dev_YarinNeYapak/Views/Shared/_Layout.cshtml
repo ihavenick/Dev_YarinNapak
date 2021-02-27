@@ -1,0 +1,547 @@
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MekaApp Yarını planlama, etkinlik düzenleme sosyal plartformu | MekaYazılım</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Mekayazılım,MekaApp sosyal, etkinlik, Andriod uygulaması, Samsung, LG, SonyErricsson, Motorola , apple, iphone" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js?v=1.7"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+    </script>
+    <!-- start-smoth-scrolling -->
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
+<body class="cbp-spmenu-push">
+    <!-- header -->
+    <div class="header-bg">
+        <section class="navigation">
+            <div class="container-fluid">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <nav class="pull">
+                        <ul class="nav">
+                            <li><a href="#home" class="scroll">Kayıt ol</a></li>
+                            <li><a href="#about" class="scroll">Giriş yap</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <div class="header-top">
+            <div class="container">
+                <div class="head-logo">
+                    <a href="index.html">MekaApp</a>
+                </div>
+                <div class="top-nav">
+                    <section class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+                        <a href="#"><img src="images/menu-icon.png" alt=""></a>
+                    </section>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="banner-info">
+            <!-- container -->
+            <div class="container">
+                <div class="col-md-5 slid">
+                    <!--- banner Slider starts Here --->
+                    <script src="js/responsiveslides.min.js"></script>
+                    <script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 4
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+
+							});
+                    </script>
+                    <!----//End-slider-script---->
+                    <div id="top" class="callbacks_container">
+                        <ul class="rslides" id="slider4">
+                            <li>
+                                <div class="mobile-device">
+                                    <img src="images/mobile1.png" alt="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mobile-device">
+                                    <img src="images/mobile2.png" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 banner-info-left">
+                    <h2>MekaApp etkinlik düzenlemek için varolan <span>En basit</span> uygulamadır</h2>
+                    <p>İnsanların bulunduğunuz mekanda ne yaptığını , ne bok yediğinimi merak ediyorsunuz? Artık peçeteyi bırakıp bu uygulama sayesinde sizde yapacak birşeyler öğrenebilirsiniz !!</p>
+                    <div class="banner-buttons">
+                        <div class="banner-button">
+                            <a href="#"><img src="images/1.png" alt="" /></a>
+                        </div>
+                        <div class="banner-button green-button">
+                            <a href="#"><img src="images/2.png" alt="" /></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- //container -->
+        </div>
+    </div>
+    <!-- //header -->
+    @*<!-- banner-bottom -->
+    <div id="services" class="banner-bottom">
+        <!-- container -->
+        <div class="container">
+            <div class="banner-text">
+                <h3>Services</h3>
+                <p>Ut mollis rhoncus porttitor. Nulla facilisi. Nulla eget est fringilla, malesuada ligula non, scelerisque enim. Fusce dui ex, accumsan at viverra nec, suscipit eget tortor.</p>
+            </div>
+            <div class="banner-bottom-grids">
+                <div class="col-md-4 banner-bottom-grid">
+                    <div class="services-icon">
+                        <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                    </div>
+                    <h4>Aliquam nulla mauris</h4>
+                    <p>Lorem Ipsum is simply Ipsum has been the industry's text of the printing and typesetting industry. </p>
+                </div>
+                <div class="col-md-4 banner-bottom-grid red">
+                    <div class="services-icon">
+                        <span class="glyphicon glyphicon-th-large glyphicon-phone" aria-hidden="true"></span>
+                    </div>
+                    <h4>Mauris pellentesque</h4>
+                    <p>Lorem Ipsum is simply Ipsum has been the industry's text of the printing and typesetting industry. </p>
+                </div>
+                <div class="col-md-4 banner-bottom-grid green">
+                    <div class="services-icon">
+                        <span class="glyphicon glyphicon-th-large glyphicon-thumbs-up" aria-hidden="true"></span>
+                    </div>
+                    <h4>Praesent vitae quam</h4>
+                    <p>Lorem Ipsum is simply Ipsum has been the industry's text of the printing and typesetting industry. </p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //banner-bottom -->
+    
+    <!-- features -->
+    <div id="features" class="features">
+        <!-- container -->
+        <div class="container">
+            <div class="features-info">
+                <h3>Özellikler</h3>
+                <p>Buraya uygulamayı öven özellikler gir.</p>
+            </div>
+            <div class="features-grids">
+                <div class="col-md-7 features-right">
+                    <h4>
+                        İşte Bunlarda Bazı Özellikler :
+                    </h4>
+                    <div class="features-right-grids">
+                        <div class="features-right-grid right-top">
+                            <div class="design-left"> </div>
+                            <div class="design-right">
+                                <h5>Yakın Çevreyi Görün</h5>
+                                <p>En yakın ve size hitap eden etkinliği bulun</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="features-right-grid right-middle-top">
+                            <div class="design-left easy"> </div>
+                            <div class="design-right">
+                                <h5>Takipçi kasın</h5>
+                                <p>Sanal penis boyunuzu karşılaştırmak için puan toplayın</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="features-right-grid right-middle">
+                            <div class="design-left developer"> </div>
+                            <div class="design-right">
+                                <h5>En çok puanı toplayana hediyeler</h5>
+                                <p>bla bla</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="features-right-grid right-bottom">
+                            <div class="design-left fully"> </div>
+                            <div class="design-right">
+                                <h5>Tamamen Kullanıcı Dostu</h5>
+                                <p>Falan filan intermilan </p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 slid">
+                    <!--- banner Slider starts Here --->
+                    <script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager: true,
+									nav: true,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+
+								});
+                    </script>
+                    <!----//End-slider-script---->
+                    <div id="top" class="callbacks_container">
+                        <ul class="rslides" id="slider3">
+                            <li>
+                                <div class="mobile-device features-device">
+                                    <img src="images/mobile.png" alt="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mobile-device green-device features-device">
+                                    <img src="images/mobile3.png" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //features -->
+    @*<!-- plans -->
+    <div id="pricing" class="plans">
+        <!-- container -->
+        <div class="container">
+            <h3>Pricing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="plans-grids">
+                <div class="plans-grid">
+                    <div class="plan-text">
+                        <a href="#">$ <span>25</span></a>
+                        <p>/month</p>
+                    </div>
+                    <div class="plans-grid-bottom">
+                        <div class="plans-grid-head">
+                            <h4>Basic</h4>
+                            <span>Description goes here</span>
+                        </div>
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                        <p>Feature 3</p>
+                        <p>Feature 4</p>
+                        <div class="plan-button">
+                            <a class="signup play-icon popup-with-zoom-anim" href="#small-dialog2">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-text">
+                        <a href="#">$ <span>50</span></a>
+                        <p>/month</p>
+                    </div>
+                    <div class="plans-grid-bottom">
+                        <div class="plans-grid-head">
+                            <h4>Standard</h4>
+                            <span>Description goes here</span>
+                        </div>
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                        <p>Feature 3</p>
+                        <p>Feature 4</p>
+                        <div class="plan-button">
+                            <a class="signup play-icon popup-with-zoom-anim" href="#small-dialog2">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-text">
+                        <a href="#">$ <span>75</span></a>
+                        <p>/month</p>
+                    </div>
+                    <div class="plans-grid-bottom">
+                        <div class="plans-grid-head">
+                            <h4>Deluxe</h4>
+                            <span>Description goes here</span>
+                        </div>
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                        <p>Feature 3</p>
+                        <p>Feature 4</p>
+                        <div class="plan-button">
+                            <a class="signup play-icon popup-with-zoom-anim" href="#small-dialog2">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-text">
+                        <a href="#">$ <span>99</span></a>
+                        <p>/month</p>
+                    </div>
+                    <div class="plans-grid-bottom">
+                        <div class="plans-grid-head">
+                            <h4>Premium</h4>
+                            <span>Description goes here</span>
+                        </div>
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                        <p>Feature 3</p>
+                        <p>Feature 4</p>
+                        <div class="plan-button">
+                            <a class="signup play-icon popup-with-zoom-anim" href="#small-dialog2">Purchase</a>
+                            <!-- script-for-menu -->
+                            <script>
+									   $( "span.menu" ).click(function() {
+										 $( "ul.nav1" ).slideToggle( 300, function() {
+										 // Animation complete.
+										  });
+										 });
+                            </script>
+                            <!-- /script-for-menu -->
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //plans -->*@
+    <!-- mail -->
+    <!-- about -->
+    @*<div id="about" class="about">
+        <!-- container -->
+        <div class="container">
+            <div class="about-info">
+                <h3>Hakkımızda</h3>
+                <p class="caption">Biz MekaYazılım olarak saçmalamayı çok severiz</p>
+                <p class="a-text">
+                    Allah rızası için bu metinlere yazaçak birşeyler bulun
+                </p>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //about -->*@
+    <div id="mail" class="mail">
+        <!-- container -->
+        <div class="container">
+            <div class="mail-info">
+                <h3>Bizimle iletişime geçin</h3>
+                <p>Anamıza ekran arkasından sövmeniz yetmedimi ? O zaman bize E-mailden sövmeye devam edebilirsiniz.</p>
+            </div>
+            <div class="mail-grids">
+                <div class="col-md-6 mail-grid-left">
+                    <h3>Adress</h3>
+                    <h5>Gelip sövmek isterseniz adresimiz <span>(levyeyi unutmayın) </span></h5>
+                    <h4>Ana bina</h4>
+                    <p>
+                        Didim
+                        <span>Çamlık</span>
+                        Aydın Türkiye
+                    </p>
+                    <h4>Ara Söv</h4>
+                    <p>
+                        Telefon: +1 234 567 9871
+                        <span>FAX: +1 234 567 9871</span>
+                        E-mail: <a href="mailto:admin@mekaapp.com">admin@mekaapp.com</a>
+                    </p>
+                </div>
+                <div class="col-md-6 contact-text">
+                    <form>
+                        <input type="text" placeholder="Ad Soyad" required="">
+                        <input type="text" placeholder="Email" required="">
+                        <input type="text" placeholder="Konu" required="">
+                        <textarea placeholder="Mesaj" required=""></textarea>
+                        <input type="submit" value="Yolla!">
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //mail -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- container -->
+        <div class="container">
+            <div class="footer-info">
+                <img src="images/8.png" alt="" />
+                @*<h3>Get Notified of any updates!</h3>
+                <p>Subscribe to our newsletter to be notified about new version release</p>
+                <form>
+                    <input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+                    <input type="submit" value="Subscribe">
+                    <div class="clearfix"> </div>
+                </form>*@
+            </div>
+            <div class="copyright">
+                <p> © 2017 MekaApp. Her hakkı saklıdır | <a href="http://mekayazılım.com/">MekaYazılım</a> Tarafından yapılmıştır.</p>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //footer -->
+    <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- content-Get-in-touch -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Meka</title>
+
+        <environment names="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+        </environment>
+        <environment names="Staging,Production">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+        @Html.Raw(JavaScriptSnippet.FullScript)
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">MekaApp</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    @*<ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    </ul>
+                    @await Html.PartialAsync("_LoginPartial")
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2017 - MekaYazılım. Telif hakkını götümüzde saklıyoruz.</p>
+            </footer>
+        </div>
+
+        <environment names="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment names="Staging,Production">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>*@
+@RenderBody()

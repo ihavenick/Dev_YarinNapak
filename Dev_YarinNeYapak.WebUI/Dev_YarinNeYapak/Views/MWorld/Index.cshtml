@@ -1,0 +1,63 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="js/compressed.js"></script>
+    <script>
+      var earth;
+        function initialize() {
+            var options = {
+                sky: true,
+                atmosphere: true,
+                dragging: true,
+                tilting: true,
+                zooming: false,
+                center: [46.8011, 8.2266],
+                zoom: 2
+            };
+        earth = new WE.map('earth_div', options);
+        earth.setView([46.8011, 8.2266], 3);
+        WE.tileLayer('http://tileserver.maptiler.com/nasa/{z}/{x}/{y}.jpg', {
+            minZoom: 0,
+            maxZoom: 5,
+            attribution: 'NASA'
+        }).addTo(earth);
+
+        var markerCustom = WE.marker([50, -9], '/img/logo-webglearth-white-100.png', 100, 24).addTo(earth);
+        var marker1 = WE.marker([@ViewBag.Enlem, @ViewBag.Boylam]).addTo(earth);
+
+        // Start a simple rotation animation
+        var before = null;
+        requestAnimationFrame(function animate(now) {
+            var c = earth.getPosition();
+            var elapsed = before? now - before: 0;
+            before = now;
+            earth.setCenter([c[0], c[1] + 0.1*(elapsed/30)]);
+            requestAnimationFrame(animate);
+        });
+      }
+    </script>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #earth_div {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute !important;
+        }
+    </style>
+    <title>Dünya haritasý</title>
+</head>
+<body onload="initialize()">
+    <div id="earth_div"></div>
+</body>
+</html>

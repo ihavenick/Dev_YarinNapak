@@ -1,0 +1,307 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <UserSecretsId>aspnet-Dev_YarinNeYapak-BFBCC2C2-3410-4B6F-86CC-ACCB6AD14A05</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\bootstrap-datepicker.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.min.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.min.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.standalone.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker.standalone.min.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.min.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.min.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="wwwroot\css\bootstrap-datepicker3.standalone.min.css.map" />
+    <Content Include="wwwroot\css\bootstrap.css" />
+    <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\font-awesome.css" />
+    <Content Include="wwwroot\css\font-awesome.min.css" />
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\css\style.css" />
+    <Content Include="wwwroot\css\styles.css" />
+    <Content Include="wwwroot\fonts\DidactGothic.ttf" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\fonts\FontAwesome.otf" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\fonts\OpenSans-Regular.ttf" />
+    <Content Include="wwwroot\fonts\Source_Sans_Pro\OFL.txt" />
+    <Content Include="wwwroot\fonts\Source_Sans_Pro\SourceSansPro-Regular.ttf" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\CHANGELOG.txt" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\CONTRIBUTING.txt" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\agenda-views.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\background-events.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\basic-views.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\default.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\external-dragging.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\gcal.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\json.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\json\events.json" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\list-views.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\locales.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\php\get-events.php" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\php\get-timezones.php" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\php\utils.php" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\selectable.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\theme.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\timezones.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\demos\week-numbers.html" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.css" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.min.css" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.min.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.print.css" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\fullcalendar.print.min.css" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\gcal.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\gcal.min.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\cupertino\jquery-ui.min.css" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\jquery-ui.min.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\jquery.min.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\lib\moment.min.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\LICENSE.txt" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale-all.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\af.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-dz.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-kw.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-ly.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-ma.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-sa.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar-tn.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ar.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\bg.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ca.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\cs.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\da.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\de-at.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\de-ch.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\de.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\el.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\en-au.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\en-ca.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\en-gb.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\en-ie.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\en-nz.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\es-do.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\es.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\et.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\eu.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\fa.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\fi.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\fr-ca.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\fr-ch.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\fr.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\gl.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\he.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\hi.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\hr.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\hu.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\id.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\is.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\it.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ja.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\kk.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ko.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\lb.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\lt.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\lv.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\mk.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ms-my.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ms.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\nb.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\nl-be.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\nl.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\nn.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\pl.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\pt-br.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\pt.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ro.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\ru.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\sk.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\sl.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\sr-cyrl.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\sr.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\sv.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\th.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\tr.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\uk.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\vi.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\zh-cn.js" />
+    <Content Include="wwwroot\fullcalendar-3.4.0\locale\zh-tw.js" />
+    <Content Include="wwwroot\js\bigSlide.js" />
+    <Content Include="wwwroot\js\bootstrap-datepicker.js" />
+    <Content Include="wwwroot\js\bootstrap-datepicker.min.js" />
+    <Content Include="wwwroot\js\bootstrap.min.js" />
+    <Content Include="wwwroot\js\classie.js" />
+    <Content Include="wwwroot\js\compressed.js" />
+    <Content Include="wwwroot\js\easing.js" />
+    <Content Include="wwwroot\js\easyResponsiveTabs.js" />
+    <Content Include="wwwroot\js\example.js" />
+    <Content Include="wwwroot\js\fss.min.js" />
+    <Content Include="wwwroot\js\jquery-2.1.4.min.js" />
+    <Content Include="wwwroot\js\jquery.min.js" />
+    <Content Include="wwwroot\js\jquery.nicescroll.js" />
+    <Content Include="wwwroot\js\move-top.js" />
+    <Content Include="wwwroot\js\pie-chart.js" />
+    <Content Include="wwwroot\js\responsiveslides.min.js" />
+    <Content Include="wwwroot\js\scripts.js" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\less\animated.less" />
+    <Content Include="wwwroot\less\bordered-pulled.less" />
+    <Content Include="wwwroot\less\core.less" />
+    <Content Include="wwwroot\less\fixed-width.less" />
+    <Content Include="wwwroot\less\font-awesome.less" />
+    <Content Include="wwwroot\less\icons.less" />
+    <Content Include="wwwroot\less\larger.less" />
+    <Content Include="wwwroot\less\list.less" />
+    <Content Include="wwwroot\less\mixins.less" />
+    <Content Include="wwwroot\less\path.less" />
+    <Content Include="wwwroot\less\rotated-flipped.less" />
+    <Content Include="wwwroot\less\screen-reader.less" />
+    <Content Include="wwwroot\less\stacked.less" />
+    <Content Include="wwwroot\less\variables.less" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="wwwroot\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="wwwroot\scss\font-awesome.scss" />
+    <Content Include="wwwroot\scss\_animated.scss" />
+    <Content Include="wwwroot\scss\_bordered-pulled.scss" />
+    <Content Include="wwwroot\scss\_core.scss" />
+    <Content Include="wwwroot\scss\_fixed-width.scss" />
+    <Content Include="wwwroot\scss\_icons.scss" />
+    <Content Include="wwwroot\scss\_larger.scss" />
+    <Content Include="wwwroot\scss\_list.scss" />
+    <Content Include="wwwroot\scss\_mixins.scss" />
+    <Content Include="wwwroot\scss\_path.scss" />
+    <Content Include="wwwroot\scss\_rotated-flipped.scss" />
+    <Content Include="wwwroot\scss\_screen-reader.scss" />
+    <Content Include="wwwroot\scss\_stacked.scss" />
+    <Content Include="wwwroot\scss\_variables.scss" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Bootstrap.v3.Datetimepicker" Version="4.17.45" />
+    <PackageReference Include="Bootstrap.v3.Datetimepicker.CSS" Version="4.17.45" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

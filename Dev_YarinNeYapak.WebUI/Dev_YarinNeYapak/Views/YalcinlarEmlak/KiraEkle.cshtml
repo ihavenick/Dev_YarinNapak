@@ -1,0 +1,53 @@
+﻿
+@model Dev_YarinNeYapak.Controllers.KiraEkleVM
+
+@using (Html.BeginForm(new { @class = "form-horizontal", role = "form", id = "kayitform" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(x=>x.KiralikEvlerId)
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 id="ModalBaslik" class="modal-title">Kira ekle</h4>
+    </div>
+    <div class="modal-body input-daterange input-group" id="datepicker">
+        <div class="form-group col-md-12" style="margin-bottom:5px">
+            <div class="col-md-4">
+                *  @Html.LabelFor(x => x.Baslangic)
+            </div>
+            <div class="col-md-8">
+                @Html.TextBoxFor(x => x.Baslangic, new { @class = "input-sm form-control", @name = "start" })
+            </div>
+            <p class="col-md-12 text-center text-danger">
+                @Html.ValidationMessageFor(x => x.Baslangic)
+            </p>
+        </div>
+        <span class="input-group-addon">-></span>
+        <div class="form-group col-md-12" style="margin-bottom:5px">
+            <div class="col-md-4">
+                *  @Html.LabelFor(x => x.Bitis)
+            </div>
+            <div class="col-md-8">
+                @Html.TextBoxFor(x => x.Bitis, new { @class = "input-sm form-control" , @name= "end" })
+            </div>
+            <p class="col-md-12 text-center text-danger">
+                @Html.ValidationMessageFor(x => x.Bitis)
+            </p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p>Zaman Secmek icin kutucuga tiklayiniz</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">İptal</button>
+        <button type="submit" class="btn btn-success">Tamam</button>
+    </div>
+}
+<script>
+    $('.input-sm').datepicker({
+        format: "dd/mm/yyyy",
+        language: "tr",
+        multidate: false,
+        keyboardNavigation: false,
+        forceParse: false,
+        toggleActive: false,
+        disableTouchKeyboard: true,
+    });
+</script>
